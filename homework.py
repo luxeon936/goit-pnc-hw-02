@@ -247,26 +247,26 @@ def combined_decrypt(ciphertext, vigenere_key, table_key):
 # Vigenère Cipher Execution
 encrypted = vigenere_encrypt(raw_text, "CRYPTOGRAPHY")
 decrypted = vigenere_decrypt(encrypted, "CRYPTOGRAPHY")
-#print("Encrypted Vigenère Cipher:", encrypted)
-#print("Decrypted Vigenère Cipher:", decrypted)
+print("Encrypted Vigenère Cipher:", encrypted)
+print("Decrypted Vigenère Cipher:", decrypted)
 
 # Applying Kasiski Examination
 print("Guessed key length", friedman_test(encrypted))
 
 guessed_key = guess_vigenere_key(encrypted)
-#print("Guessed key with Fridman", guessed_key)
+print("Guessed key with Fridman", guessed_key)
 
 # Simple Transposition Cipher Execution
 encrypted = simple_transposition_encrypt(raw_text, "SECRET")
 decrypted = simple_transposition_decrypt(encrypted, "SECRET")
-#print("Encrypted Simple Transposition Cipher:", encrypted)
-#print("Decrypted Simple Transposition Cipher:", decrypted)
+print("Encrypted Simple Transposition Cipher:", encrypted)
+print("Decrypted Simple Transposition Cipher:", decrypted)
 
 # Double Transposition Cipher Execution
 encrypted = double_transposition_encrypt(raw_text, "SECRET", "CRYPTO")
 decrypted = double_transposition_decrypt(encrypted, "SECRET", "CRYPTO")
-#print("Encrypted Double Transposition Cipher:", encrypted)
-#print("Decrypted Double Transposition Cipher:", decrypted)
+print("Encrypted Double Transposition Cipher:", encrypted)
+print("Decrypted Double Transposition Cipher:", decrypted)
 
 # Table Cipher Execution
 encrypted = table_cipher_encrypt(raw_text, "MATRIX")
